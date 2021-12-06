@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Milestone 3</title>
+  <style type="text/css">
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .header > * {
+      margin-bottom: 0px;
+    }
+    .list > li {
+      line-height: 150%;
+    }
+    .subsection {
+      margin: 15px;
+    }
+    .subsection li {
+      margin-bottom: 10px;
+    }
+    .table-header {
+      width: 33.3%;
+    }
+    .figma {
+      background:url(./loading.gif) center center no-repeat;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      width: 800px;
+      height: 450px;
+    }
+    .figma > iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .citations br {
+      height: 150%;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 5px;
+      margin: 0;
+      vertical-align: top;
+    }
+    td ul {
+      padding-left: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    iframe {
+      max-width: 100%;
+    }
+    cite {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Human Computer Interaction</h1>
+    <h2>Manicotti Giraffe</h2>
+    <h3>Jennifer Teissler & Eileen Catoe</h3>
+  </div>
+  <div class="container">
+    <a href="index.html">Back</a>
+    <h1><u>Milestone 3</u></h1>
+    <section>
+      <h2>A. User Experience Requirements</h2>
+      <p>In this milestone we develop user stories representative of the user experiences we wish to examine. We take those user stories, develop them into proposed changes, create figma wireframes, and finally choose a wireframe to refine into a final figma mockup.</p>
+      <div class="subsection">
+        <h3>User Stories</h3>
+        <ul>
+          <li><b>EPIC - As a student I want to easily interact with Piazza posts and comments so that I can participate in class activities and discussions.</b></li>
+            <ul>
+              <li>As a student I want to quickly and easily make posts and comments so I don't fall behind in-class discussion.</li>
+              <li>As a student I want to be able to navigate to and read other posts and comments so that I can participate in class activities and discussions.
+            </ul>
+          </li>
+          <li><b>EPIC - As a student I want to quickly find key information so that I can navigate Piazza quickly without having to search long for things.</b></li>
+            <ul>
+              <li>As a student I want to sort items in the sidebar so that I can easily find them.</li>
+              <li><s>As a student I want to see notifications when someone responds to a post or comment of mine so I can respond in a timely manner.</s> (NOT FEASABLE TO IMPLEMENT)</li>
+              <li>As a student I want to know when an instructor has seen my posts so that I can have confirmation that my participation has been counted.</li>
+            </ul>
+          <li><b>EPIC - As a student I don't want to have too much information bloating and taking up the screen so that I can know what is and isn't relevant to me.</b></li>
+          <ul>
+            <li>As a student, I want to be able to show and hide the sidebar so I have more room to read posts.</li>
+            <li><s>As a student I want to be able to hide the statistics bar at the bottom of the page so it doesn't distract me with extraneous information.</s> (ALREADY IMPLEMENTED)</li>
+            <li>As a student I want to be able to close the donation message so that I can view more of a post at one time.</li>
+            <li><s>As a student I want to be able to adjust Piazza settings so that I can use the site how I prefer.</s> (SCOPE WAY TOO BROAD)</li>
+            <li>As a student I want to toggle the Note History on and off so that I have more screen space to use if I don't use that feature.</li> 
+          </ul>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>To-Do List</h3>
+        <table>
+          <tr>
+            <th class="table-header">User Story</th>
+            <th class="table-header">Tasks</th>
+            <th class="table-header">Relevance</th>
+          </tr>
+          <tr>
+            <td>As a student I want to quickly and easily make posts and comments so I don't fall behind in-class discussion.</td>
+            <td>
+              <ul>
+                <li>Change post button to look like a button.</li>
+                <li>Make show/hide preview an obvious toggle.</li>
+                <li>Change "as" to not look like a hyperlink.</li>
+              </ul>
+            </td>
+            <td>Piazza is centered around group discussion and feedback, so improving and facilitating this process is vital to improving Piazza as a whole.</td>
+          </tr>
+          <tr>
+            <td>As a student I want to be able to navigate to and read other posts and comments so that I can participate in class activities and discussions.</td>
+            <td>
+              <ul>
+                <li>Stop the page from scrolling every time a new post or comment is posted.</li>
+                <li>Increase the font size of the username at the top of a post so it's bigger and more noticable.</li>
+              </ul>
+            </td>
+            <td>NOTE: We don't think this story is in-depth enough that it functions as a true story here (it's far too vague), but we believe the tasks for changes listed here are still good inclusions for design changes to Piazza.</td>
+          </tr>
+          <tr>
+            <td>As a student I want to sort items in the sidebar so that I can easily find them.</td>
+            <td>
+              <ul>
+                <li>Make the search options cog wheel look like it contains search options rather than settings.</li>
+                <li>Put folder icons next to all search categories for consistency.</li>
+                <li>Put Unread, Updated, Unresolved, and Following filters inside the search cog wheel.</li>
+              </ul>
+            </td>
+            <td>For many classes, there ends up being so many different piazza posts that it gets hard to navigate the posts just by scrolling through the sidebar list. Finding the posts you want and making sure you've read or responded to the ones you need to is critical to a student's participation in class. Piazza already has reasonably good filter categories, but it presents them as if they are three entirely different functions, rather than putting them all in one place for easy access.</td>
+          </tr>
+          <tr>
+            <td>As a student I want to know when an instructor has seen my posts so that I can have confirmation that my participation has been counted.</td>
+            <td>
+              <ul>
+                <li>Change the resolved post marker to a less urgent color.</li>
+                <li>Don't let students mark other students' posts as resolved.</li>
+              </ul>
+            </td>
+            <td>Knowing when an instructor sees or grades your post can be very helpful to a student in the same way that having access to their current gradebook is helpful to a student. The resolved / unresolved featue piazza has does a nice job of this, but the fact that people other than the original poster or instructor can mark the post as resolved could lead to confusion and possibly result in the instructor completly missing the post.</td>
+          </tr>
+          <tr>
+            <td>As a student, I want to be able to show and hide the sidebar so I have more room to read posts.</td>
+            <td>
+              <ul>
+                <li>Move the show/hide button to a more obvious area and make it more visible.</li>
+                <li>Increase signifiers to let students know that the sidebar can actually be hidden.</li>
+              </ul>
+            </td>
+            <td>The sidebar used to navigate between different posts on piazza takes up a lot of screen real estate, especially on smaller devices; it takes up an absurd amount of screen space on mobile, making the site impossible to read. There is a way to temporarily hide the sidebar, but it has poor signifiers and is once again practically impossible to see on mobile devices.</td>
+          </tr>
+          <tr>
+            <td>As a student I want to toggle the Note History on and off so that I have more screen space to use if I don't use that feature.</td>
+            <td>
+              <ul>
+                <li>Add new option to toggle note history in settings.</li>
+              </ul>
+            </td>
+            <td>Note history is an arguably confusing option. The fact that Piazza has a forum-like format means that another method of seeing when and in what order posts were made is fairly redundant. Hiding it simplifies the user interface and ups the usability. We don't want to just remove features though, and thus will be making it a toggleable option rather than a concrete decision.</td>
+          </tr>
+          <tr>
+            <td>As a student I want to be able to close the donation message so that I can view more of a post at one time.</td>
+            <td>
+              <ul>
+                <li>Add an X to close the donation message.</li>
+              </ul>
+            </td>
+            <td>The relevance for this user story is similar to that of one of the previous user stories. Screen space is usually limited on most devices, and an unclosable donation message takes away screen real estate. It is akin to putting useless empty boxes on a website to make it more difficult to see information.</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>B. Ideation and Preliminary Designs</h2>
+      <div class="subsection">
+      <p>We actually did wireframes for most of our various designs from our ideation step. These and their justifications are all included in the embedded figma documents.</p>
+      <section>
+        <h3>STORY: As a student I want to quickly and easily make posts and comments so I don't fall behind in-class discussion.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZIukW7wmamDNGdiZilR1jD%2FWF%253A-Post-Button"></iframe>
+        </div>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQDngzIjsrjJWd7ncXG5l4x%2FWF%253A-Post-Preview"></iframe>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to sort items in the sidebar so that I can easily find them.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlE1yQLFn6VM24VKnfsUHsQ%2FWF%253A-Filter-Alternatives"></iframe>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to know when an instructor has seen my posts so that I can have confirmation that my participation has been counted.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCHjWB3pWUiYOi1k3rpH6eX%2FWF%253A-Post-Resolution%3Fnode-id%3D0%253A1"></iframe>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student, I want to be able to show and hide the sidebar so I have more room to read posts.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLWp3u4kkUBisHGFN9KrPUz%2FWF%253A-Sidebar-Collapse-button"></iframe>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to toggle the Note History on and off so that I have more screen space to use if I don't use that feature.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F26Ys3Y8VuG4FbpAjW0ySAd%2FWF%253A-Note-History-Toggle"></iframe>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to be able to close the donation message so that I can view more of a post at one time.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FgFwUPKRKfTuTiuSHG3rCK5%2FWF%253A-Donate-X-button"></iframe>
+        </div>
+      </section>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>C. Detailed Designs</h2>
+      <div class="subsection">
+      <section>
+        <h3>STORY: As a student I want to quickly and easily make posts and comments so I don't fall behind in-class discussion.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNFTr7L3m4XV2OKQhdGY1xg%2FMockup-Post-Button"></iframe>
+        </div>
+        <p>We chose to proceed with the standard button model and a togglebox preview as we believe the benefits of these designs outweigh their downsides. In the case of the toggle box, it’s biggest weakness as compared to a checkbox is that it requires more work to be intuitive to a real world counterpart. However, it benefits from it’s minimalist design, easy identifiability, and lack of strict commitment. The checkbox on the other hand carries an implication of more permanent selections and implies some meditation is required before confirmation. These are all very small divergences, but we believe they are important when deciding our final creation. It seems that in this instance, the justification given by Saadia Minhus in they’re article Checkbox vs Toggle Switch, where they state that “User needs to perform instantaneous actions that do not need a review or confirmation”, which fits closest with the functionality of Piazza’s post preview.</p>
+        <p><cite>Minhas, Saadia. "Checkbox Vs Toggle Switch". Medium, 2021, <a href="https://uxplanet.org/checkbox-vs-toggle-switch-7fc6e83f10b8/">https://uxplanet.org/checkbox-vs-toggle-switch-7fc6e83f10b8/</a>. Accessed 8 Nov 2021.</cite></p>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to sort items in the sidebar so that I can easily find them.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FoQ2pHvIiJy1cZfJr6swbO7%2FMockup-Filter-Button%3Fnode-id%3D0%253A1"></iframe>
+        </div>
+        <p>This design combines the filter and cogwheel into one button. This is because previously, the filters were splayer above the search bar, which lowered the signal to noise ratio of the system. They also were already contained within the cogwheel menu, which further adds to the redundancy of the previous design. We believe the name of the button adaquetly communicated where the old filters have gone, which is supported by Nick Babich’s article Best Practices for Search, where they state that “if you do hide some, add a link to “View All Filters” so that they’re still accessible.” It also updates the cogwheel to fall more in line with it’s function: that being options related to Filtering and Posts.</p>
+        <p><cite>Babich, Nick. "Best Practices For Search | UX Booth". Uxbooth.Com, 2021, <a href="https://www.uxbooth.com/articles/best-practices-for-search/">https://www.uxbooth.com/articles/best-practices-for-search/</a>. Accessed 8 Nov 2021.</cite></p>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to know when an instructor has seen my posts so that I can have confirmation that my participation has been counted.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FoUI34ur2dKHpdR6JWLnTJK%2FMockup-Post-Resolution"></iframe>
+        </div>
+        <p>In our mockup for this design we decided to maintain the view of the resolved/unresolved view for students, while increasing the opacity of the coloration of the original wireframe. In addition we changed the filled circle to be greyed out, a low contrast color that will reduce the chances of users mistaking it for an interactable element. Additionally, according to Nadeeka Athukorala’s article How To Not Get In Trouble When Branding Your App With Red, “when the other elements are too in red, it just creates a competition among all the elements, making the user unable to focus on the most important message.” To help alleviate this we lightened the color of the resolved/unresolved icon so that it was less harsh for both professors and students, and made sure that the resolved state was a clear complimentary color, notably the same shade as the primary color of piazza’s branding. These gives the element a seamless look as well as communicating confirmation for the different state.</p>
+        <p><cite>Athukorala, Nadeeka. "How To Not Get In Trouble When Branding Your App With Red". Medium, 2019, <a href="https://uxdesign.cc/branding-your-app-with-red-a7df0b6b0e54/">https://uxdesign.cc/branding-your-app-with-red-a7df0b6b0e54/</a>. Accessed 8 Nov 2021.</cite></p>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student, I want to be able to show and hide the sidebar so I have more room to read posts.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6SNr7H03ERQUTc42AA1hKq%2FMockup-Sidebar-Collapse-Button"></iframe>
+        </div>
+        <p>We chose this design because it emphasizes a previously hard to spot element in the Piazza interface. Screen space, especially for mobile users like laptops and phones, is incredibly important for usability. So promoting the use of the feed collapse button helps increase usability throughout Piazza and overwhelmingly increases it for the stakeholders out team is most concerned with, that is new users and time constrained users. This design not only improves on the original design by having increased contrast with the frame, more noticeably interactable elements, and larger overall presentation, but it beats out our other design in many ways. Since this change accomplishes several things at once, I believe it may be better to list off the benefits of the design over the previous.</p>
+        <ul>
+          <li> The button maintains it’s position despite the changes around it, which out previous design failed to do. “Nevermind the choice of icon or its position, whenever an accordion is expanded, it should be easy to immediately collapse it. This interaction shouldn’t require any extra movement of the mouse cursor or finger...” (Friedman)</li>
+          <li>The proximity and visual similarity to the New Post button helps users categorize it easier as a button in their conceptual model as supported by the proximity principle. “The principle of proximity states that items close together are likely to be perceived as part of the same group — sharing similar functionality or traits.” (Harley)</li>
+        </ul>
+        <p>In our mockup we decided to add another layer of interaction that is the change in appearance on a click, which causes the button to take on the appearance of a pressed button using an inner shadow. This helps “draw attention to certain elements by making them pop and help create a unique look” (3), which accomplishes our goal of promoting interactivity and customizability of the Piazza UI.</p>
+        <p>Additionally giving it a high contrasting color similar to the “New Post” button helps communicate interactability “A contrasting color from the surrounding text and background”, as is stated by the Health.gov’s article Make Clickable Elements Recognizable.</p>
+        <p><cite>Friedman, Vitaly. "Designing The Perfect Accordion — Smashing Magazine". Smashing Magazine, 2017, <a href="https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/">https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/</a>. Accessed 8 Nov 2021</cite><br>
+        <cite>Harley, Aurora. "Proximity Principle In Visual Design". Nielsen Norman Group, 2021, <a href="https://www.nngroup.com/articles/gestalt-proximity/">https://www.nngroup.com/articles/gestalt-proximity/</a>. Accessed 8 Nov 2021</cite><br>
+        <cite>"Should You Use Shadows And Blurs In Website Design In 2020? | W3 Lab". W3 Lab, 2021, <a href="https://w3-lab.com/should-you-use-shadows-blurs-website-design-2020/">https://w3-lab.com/should-you-use-shadows-blurs-website-design-2020/</a>. Accessed 8 Nov 2021.</cite><br>
+        <cite>"Make Clickable Elements Recognizable. - Health Literacy Online | Health.Gov". Health.Gov, 2021, <a href="https://health.gov/healthliteracyonline/organize/section-4-5/">https://health.gov/healthliteracyonline/organize/section-4-5/</a>. Accessed 8 Nov 2021.</cite></p>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to toggle the Note History on and off so that I have more screen space to use if I don't use that feature.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYIn0cUyU8VDfSgCnU54Pfw%2FMockup-Note-History"></iframe>
+        </div>
+        <p>We ultimately decided that this design was superior for a few reasons. First and most obvious, the positioning of the option turn off/on the Note History function being in the Settings menu most closely follows the the proximity principle. This is defined in Aurora Harley’s article Proximity Principle in Visual Design as “The principle of proximity states that items close together are likely to be perceived as part of the same group — sharing similar functionality or traits.” This creates an intuitive spot for the setting. The biggest downside we initally suspected in this decision is that legacy users may be confused by the now vanished Note History function. However, given it’s niched function and the few steps required to re-enable it, we believe the increased screen space as well as the increased signal to noise ratio will be a marked improvement.</p>
+        <p>Another aspect that we believed beat out the opposing design is that the setting is hidden in the menu, rather than left in view. Leaving it in view may not have improved the design, as the space would still be left somewhat busy with the added toggleable element.</p>
+        <p><cite>Harley, Aurora. "Proximity Principle In Visual Design". Nielsen Norman Group, 2021,<a href="https://www.nngroup.com/articles/gestalt-proximity/">https://www.nngroup.com/articles/gestalt-proximity/</a>. Accessed 8 Nov 2021</cite></p>
+      </section>
+      <hr>
+      <section>
+        <h3>STORY: As a student I want to be able to close the donation message so that I can view more of a post at one time.</h3>
+        <div class="figma">
+          <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsIg5VuewYyt2RHhYT8FDFi%2FMockup-Donate-Close"></iframe>
+        </div>
+        <p>We chose to proceed with this design as it follows several principles that the first idea did not. Firstly, this design takes advantage of the principle of proximity. By placing and designing the button similarly to the donation buttons, it signifies that it affords being pressed and that it belongs to the group of buttons associated with the donation box. Additionally, by placing it on the bottom of the donation box it is slightly closer than the previous design, which improves it “Because elements separated by whitespace are perceived as being less related, far-away items can be easily overlooked by task-focused users who expect all relevant information and interactive elements to be placed close together” (Harley). It also follows the natural direction a users eyes will follow when scanning the post, moving from the top and down to the post they want to read, so having the post and “close” button nearby affords the user to spot it quicker and more intuitively then the top right hand corner.</p>
+        <p>Secondly, the nature of a “close” button carries less baggage then an “X” button in UI design. In Aurora Harley’s article Cancel vs Close: Design to Distinguish the Difference, they state that “Yes, the X icon is commonly recognized by users to mean either to cancel or to close, but distinguishing between the two possibilities is critical for the success of the interaction.” This points to the X button being a UI element that a lot of users have common interactions with and likely place a lot of importance in. To foster a sense of user confidences, we opted for a design with less finality, so that users will feel enabled to experiment with the new elements we’ve added, especially given that the donate box returns after changing posts only a few times.</p>
+        <p>
+        <cite>Harley, Aurora. "Proximity Principle In Visual Design". Nielsen Norman Group, 2021, <a href="https://www.nngroup.com/articles/gestalt-proximity/">https://www.nngroup.com/articles/gestalt-proximity/</a>. Accessed 8 Nov 2021</cite><br>
+        <cite>Harley, Aurora. "Cancel Vs Close: Design To Distinguish The Difference". Nielsen Norman Group, 2021, <a href="https://www.nngroup.com/articles/cancel-vs-close/">https://www.nngroup.com/articles/cancel-vs-close/</a>. Accessed 8 Nov 2021.</cite>
+        </p>
+      </section>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>D. Summary Powerpoint & Video</h2>
+      <div class="subsection"> 
+        <div class="figma">
+          <iframe loading="lazy" src="https://docs.google.com/presentation/d/e/2PACX-1vSC4EjclD0UjjQIT_b_WdujHX_fKb0LIoJ6LRkHHgRttRhinWrf2S3Qv_Vhp6N-bIsYyA72KjmEG8IA/embed?start=false&loop=false&delayms=3000"></iframe>
+          <iframe width="960" height="569" src="https://www.youtube.com/embed/dv6OASTtxKI"></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

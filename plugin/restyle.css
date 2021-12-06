@@ -1,0 +1,27 @@
+
+
+/*.contributions {
+	visibility: hidden;
+	height: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}*/
+
+.button-wrapper {
+	display: flex;
+	justify-content: right;
+}
+
+.close-button {
+	width: 29%;
+	padding: 1px !important;
+}
+
+.button_pad button:hover { 
+    color: black !important;
+    background-color: white !important;
+    transition: box-shadow 0.2s;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
