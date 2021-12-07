@@ -8,8 +8,12 @@
 	},
 	"content_scripts": [{
 		"matches": ["https://piazza.com/class/*"],
-		"js": ["donation-close.js", "hide-stats.js"],
-		"css":["donation-close.css"]
+
+		"js": [	"donation-close.js", 
+				"hide-stats.js"],
+
+		"css":[	"donation-close.css", 
+				"post-history.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],

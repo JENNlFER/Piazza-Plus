@@ -1,0 +1,12 @@
+.main_panel {
+	top: 0px !important;
+}
+
+#history_slider_wrapper {
+	visibility: hidden;
+}
+
+#popular_tags_bar {
+	z-index: 1;
+	position: relative;
+}
