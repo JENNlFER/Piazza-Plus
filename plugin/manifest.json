@@ -15,7 +15,8 @@
 
 		"css":[	"donation-close.css", 
 				"post-history.css",
-				"hide-stats.css"]
+				"hide-stats.css",
+				"thread-restyle.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],

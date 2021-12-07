@@ -3,5 +3,5 @@ window.addEventListener('load', function () {
 	if (e.style.display.trim() == 'block') {
 		e.click();
 	}
-	console.log("Loaded Stat Hide");
+	console.log("Statistics hidden.");
 }, false);
