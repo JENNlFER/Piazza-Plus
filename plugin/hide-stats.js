@@ -1,5 +1,7 @@
 window.addEventListener('load', function () {
-	console.log(document.getElementsByClassName('special_mentions_visibility hide')[0]);
-	document.getElementsByClassName('special_mentions_visibility hide')[0].click();
+	let e = document.getElementsByClassName('special_mentions_visibility')[0];
+	if (e.style.display.trim() == 'block') {
+		e.click();
+	}
 	console.log("Loaded Stat Hide");
 }, false);

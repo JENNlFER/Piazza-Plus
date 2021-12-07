@@ -10,10 +10,12 @@
 		"matches": ["https://piazza.com/class/*"],
 
 		"js": [	"donation-close.js", 
-				"hide-stats.js"],
+				"hide-stats.js",
+				"scroll-cancel.js"],
 
 		"css":[	"donation-close.css", 
-				"post-history.css"]
+				"post-history.css",
+				"hide-stats.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],
