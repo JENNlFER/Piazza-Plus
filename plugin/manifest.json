@@ -7,9 +7,9 @@
 		"service_worker": "background.js"
 	},
 	"content_scripts": [{
-		"matches": ["<all_urls>"],
-		"js": ["restyle.js"],
-		"css":["restyle.css"]
+		"matches": ["https://piazza.com/class/*"],
+		"js": ["donation-close.js"],
+		"css":["donation-close.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],
