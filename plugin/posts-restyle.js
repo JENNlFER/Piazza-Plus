@@ -1,7 +1,7 @@
 const panel = document.getElementsByClassName('main_panel')[0];
 
 var x = 10;
-const callback = function(mutations, observer) {
+const orb_callback = function(mutations, observer) {
 	observer.disconnect();
 	const actions = document.getElementsByClassName('actions');
 	for (const a of actions) {
@@ -15,5 +15,5 @@ const callback = function(mutations, observer) {
 	observer.observe(panel, {attributes: false, childList: true, subtree: true});
 };
 
-const obs = new MutationObserver(callback);
+const obs = new MutationObserver(orb_callback);
 obs.observe(panel, {attributes: false, childList: true, subtree: true});

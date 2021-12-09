@@ -18,8 +18,7 @@
 		"css":[	"donation-close.css",
 				"post-history.css",
 				"hide-stats.css",
-				"thread-restyle.css",
-                "resolution.css"
+                "resolution.css",
 				"posts-restyle.css"]
 	}],
 	"options_page": "options.html",
