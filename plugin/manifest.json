@@ -9,14 +9,16 @@
 	"content_scripts": [{
 		"matches": ["https://piazza.com/class/*"],
 
-		"js": [	"donation-close.js", 
+		"js": [	"donation-close.js",
 				"hide-stats.js",
-				"scroll-cancel.js"],
+				"scroll-cancel.js",
+                "resolution.js"],
 
-		"css":[	"donation-close.css", 
+		"css":[	"donation-close.css",
 				"post-history.css",
 				"hide-stats.css",
-				"thread-restyle.css"]
+				"thread-restyle.css",
+                "resolution.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],

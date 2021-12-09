@@ -1,0 +1,11 @@
+.clarifying_discussion.unresolved div > .resolve_unresolve_actions{
+    background: rgba(157, 34, 34, 0.5) !important;
+}
+
+.clarifying_discussion div > .resolve_unresolve_actions{
+    background: rgba(99, 150, 225, 0.5) !important;
+}
+
+.mark_resolved{
+    background: rgba(119, 124, 131, 0.75); !important;
+}
