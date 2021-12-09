@@ -1,6 +1,5 @@
 const panel = document.getElementsByClassName('main_panel')[0];
 
-var x = 10;
 const orb_callback = function(mutations, observer) {
 	observer.disconnect();
 	const actions = document.getElementsByClassName('actions');
@@ -9,7 +8,17 @@ const orb_callback = function(mutations, observer) {
 		
 		const links = a.getElementsByClassName('preview_link');
 		for (const link of links) {
-			a.insertBefore(hitMeUp('<button class="orb"></button>'), link);
+			// a.insertBefore(hitMeUp('<button class="orb"></button>'), link);
+			link.classList.add('orb');
+			// TODO: Fix me so I apply the correct on/off state
+			link.addEventListener('click', () => {
+				console.log('clicked, bitch')
+				if (link.classList.contains('on')) {
+					link.classList.remove('on');
+				} else {
+					link.classList.add('on');
+				}
+			})
 		}
 	}
 	observer.observe(panel, {attributes: false, childList: true, subtree: true});
