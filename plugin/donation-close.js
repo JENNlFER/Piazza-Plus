@@ -12,6 +12,6 @@ window.addEventListener('load', function () {
 	tag.children[0].children[0].addEventListener("click", function() { 
 		document.getElementById('contribution_wrapper').remove();
 	});
-	tag.children[0].children[0].click(); //TODO: remove
-	console.log("Loaded Donations");
+	//tag.children[0].children[0].click(); //TODO: remove
+	console.log("Donation close button added.");
 }, false);

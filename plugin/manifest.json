@@ -12,13 +12,15 @@
 		"js": [	"donation-close.js",
 				"hide-stats.js",
 				"scroll-cancel.js",
-                "resolution.js"],
+                "resolution.js",
+				"posts-restyle.js"],
 
 		"css":[	"donation-close.css",
 				"post-history.css",
 				"hide-stats.css",
 				"thread-restyle.css",
-                "resolution.css"]
+                "resolution.css"
+				"posts-restyle.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],

@@ -1,0 +1,81 @@
+.user_name {
+	font-size: initial;
+}
+
+#new_post_button {
+	box-shadow: inset 0.1px 0.1px 3px rgb(40, 40, 40);
+	padding-top: 3px !important;
+	padding-bottom: 4px !important;
+	border: solid;
+  border-width: 1px;
+  border-color: rgb(153, 153, 153);
+}
+
+.submit_post, .save_draft, .cancel, #new_post_button {
+	font-weight: 600;
+	position: relative;
+	border-width: 0px;
+	border-radius: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white !important;
+  background-image: linear-gradient(to bottom, hsl(206, 52%, 58%), hsl(207, 52%, 43%));
+  text-decoration: none !important;
+  text-shadow: rgb(0 0 0 / 25%) 0px -1px 0px;
+}
+
+.submit_post:hover, .save_draft:hover, .cancel:hover, #new_post_button:hover {
+	box-shadow: inset 1px 1px 1px #000;
+	background-image: linear-gradient(to bottom, hsl(206, 52%, 58%), hsl(207, 52%, 43%));
+	border: none;
+}
+
+.submit_post:active, .save_draft:active, .cancel:active, #new_post_button:active {
+	box-shadow: inset 2px 2px 1px #000 !important;
+	background-image: linear-gradient(to bottom, hsl(206, 52%, 48%), hsl(207, 52%, 33%)) !important;
+	border: none;
+}
+
+.save_draft {
+	position: absolute;
+	right: 59px;
+}
+
+.cancel {
+	float: right;
+}
+
+.anonymity_selector {
+	position: relative;
+	right: 14px;
+	padding-top: 3px !important;
+	padding-bottom: 4px !important;
+}
+
+.preview_link {
+	background: white;
+  height: 28px;
+  border-radius: 20px;
+  box-shadow: inset 0.25px 0.25px 1px rgb(40 40 40);
+  color: white;
+  user-select: none;
+  font-size: 0px;
+  width: 50px;
+}
+
+.orb {
+	width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, hsl(206, 52%, 58%), hsl(207, 52%, 43%));
+  border: none;
+  position: relative;
+  margin-top: 2px;
+  right: 26px;
+}
+
+
+
+
