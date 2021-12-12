@@ -11,13 +11,13 @@ function disableRadios(){
   }
 }
 
-function callback(){
+function setRadios(){
   disableRadios();
 }
 
-const observer = new MutationObserver(callback);
+const resolveObserver = new MutationObserver(setRadios);
 let view = document.getElementById("views");
-observer.observe(view, {
+resolveObserver.observe(view, {
   childList: true,
   subtree: true
 });

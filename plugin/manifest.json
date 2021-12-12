@@ -1,5 +1,5 @@
 {
-	"name": "Piazza Restyle",
+	"name": "Piazza Plus",
 	"description": "Built for HCI 2021",
 	"version": "1.0",
 	"manifest_version": 3,
@@ -13,13 +13,15 @@
 				"hide-stats.js",
 				"scroll-cancel.js",
                 "resolution.js",
-				"posts-restyle.js"],
+				"posts-restyle.js",
+				"collapse-feed.js"],
 
 		"css":[	"donation-close.css",
 				"post-history.css",
 				"hide-stats.css",
                 "resolution.css",
-				"posts-restyle.css"]
+				"posts-restyle.css",
+				"collapse-feed.css"]
 	}],
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],
@@ -39,5 +41,9 @@
 		"48": "/icons/48.png",
 		"128": "/icons/128.png",
 		"512": "/icons/512.png"
-	}
+	},
+	"web_accessible_resources": [{
+		"resources": ["/assets/*"],
+		"matches": ["<all_urls>"]
+	}]
 }
