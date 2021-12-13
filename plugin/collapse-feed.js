@@ -18,3 +18,9 @@ collapse.append(lineImgCollapse);
 expand.append(lineImgExpand);
 collapse.style.display = "block";
 collapse.style.display = "block";
+
+let label_parent = document.getElementsByClassName("page_feed_options")[0];
+let filter_label = document.createElement('SPAN');
+filter_label.id = "filter_label";
+filter_label.textContent = 'Filter Search';
+label_parent.prepend(filter_label);

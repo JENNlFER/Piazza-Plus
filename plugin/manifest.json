@@ -18,7 +18,6 @@
 
 		"css":[	"donation-close.css",
 				"post-history.css",
-				"hide-stats.css",
                 "resolution.css",
 				"posts-restyle.css",
 				"collapse-feed.css"]
