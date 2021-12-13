@@ -2,9 +2,18 @@ body {
 	width: 300px;
 }
 
+.lez {
+	background: red;
+  background: -webkit-linear-gradient(#d62800, #ff9b56, #ffffff, #d462a6, #a40062);
+  background: linear-gradient(to right, #d62800, #ff9b56, #ffffff, #d462a6, #a40062);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.25px black;
+}
+
 .rainbow {
 	background: red;
-  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, violet);
+  background: -webkit-linear-gradient(red, orange, yellow, green, blue, violet);
   background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
