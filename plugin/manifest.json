@@ -3,18 +3,15 @@
 	"description": "Built for HCI 2021",
 	"version": "1.0",
 	"manifest_version": 3,
-	"background": {
-		"service_worker": "background.js"
-	},
 	"content_scripts": [{
 		"matches": ["https://piazza.com/class/*"],
 
 		"js": [	"donation-close.js",
 				"hide-stats.js",
-				"scroll-cancel.js",
                 "resolution.js",
 				"posts-restyle.js",
-				"collapse-feed.js"],
+				"collapse-feed.js",
+				"post-history.js"],
 
 		"css":[	"donation-close.css",
 				"post-history.css",
@@ -25,21 +22,19 @@
 	"options_page": "options.html",
 	"permissions": ["storage", "activeTab", "scripting"],
 	"action": {
-		"default_popup": "popup.html",
+		"default_popup": "options.html",
 		"default_icon": {
 			"16": "/icons/16.png",
 			"32": "/icons/32.png",
 			"48": "/icons/48.png",
-			"128": "/icons/128.png",
-			"512": "/icons/512.png"
+			"128":"/icons/128.png"
 		}
 	},
 	"icons": {
 		"16": "/icons/16.png",
 		"32": "/icons/32.png",
 		"48": "/icons/48.png",
-		"128": "/icons/128.png",
-		"512": "/icons/512.png"
+		"128":"/icons/128.png"
 	},
 	"web_accessible_resources": [{
 		"resources": ["/assets/*"],

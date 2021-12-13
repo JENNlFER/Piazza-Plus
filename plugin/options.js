@@ -1,46 +1,56 @@
-let page = document.getElementById("buttonDiv");
-let selectedClassName = "current";
-const presetButtonColors = ["#3aa757", "#e8453c", "#f9bb2d", "#4688f1"];
+let toggle_donation = document.getElementById("toggle_donation");
+let restore_history = document.getElementById("restore_history");
 
-// Reacts to a button click by marking the selected button and saving
-// the selection
-function handleButtonClick(event) {
-  // Remove styling from the previously selected color
-  let current = event.target.parentElement.querySelector(
-    `.${selectedClassName}`
-  );
-  if (current && current !== event.target) {
-    current.classList.remove(selectedClassName);
-  }
+toggle_donation.addEventListener("click", async () => {
+	chrome.storage.local.set({donation: toggle_donation.checked}, function() {}); 
 
-  // Mark the button as selected
-  let color = event.target.dataset.color;
-  event.target.classList.add(selectedClassName);
-  chrome.storage.sync.set({ color });
+	if (toggle_donation.checked) {
+		let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+	  chrome.scripting.executeScript({
+	    target: { tabId: tab.id },
+	    function: click_close,
+	  });
+	}
+});
+
+restore_history.addEventListener("click", async () => {
+	chrome.storage.local.set({history: restore_history.checked}, function() {});
+
+	let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+	if (restore_history.checked) {
+		chrome.scripting.executeScript({
+		  target: { tabId: tab.id },
+		  function: mark_visible,
+		});
+	} else {
+		chrome.scripting.executeScript({
+		  target: { tabId: tab.id },
+		  function: mark_hidden,
+		});
+	}
+})
+
+chrome.storage.local.get(['donation'], function(data) {
+	toggle_donation.checked = data.donation;
+});
+
+chrome.storage.local.get(['history'], function(data) {
+	restore_history.checked = data.history;
+});
+
+function click_close() {
+  let close_btn = document.getElementById('close_donation');
+  if (close_btn != null) close_btn.click();
 }
 
-// Add a button to the page for each supplied color
-function constructOptions(buttonColors) {
-  chrome.storage.sync.get("color", (data) => {
-    let currentColor = data.color;
-    // For each color we were provided…
-    for (let buttonColor of buttonColors) {
-      // …create a button with that color…
-      let button = document.createElement("button");
-      button.dataset.color = buttonColor;
-      button.style.backgroundColor = buttonColor;
-
-      // …mark the currently selected color…
-      if (buttonColor === currentColor) {
-        button.classList.add(selectedClassName);
-      }
-
-      // …and register a listener for when that button is clicked
-      button.addEventListener("click", handleButtonClick);
-      page.appendChild(button);
-    }
-  });
+function mark_hidden() {
+	document.getElementsByClassName('main_panel')[0].setAttribute('data-visible', false);
+	document.getElementById('history_slider_wrapper').setAttribute('data-visible', false);
+	document.getElementById('popular_tags_bar').setAttribute('data-visible', false);
 }
 
-// Initialize the page by constructing the color options
-constructOptions(presetButtonColors);
+function mark_visible() {
+	document.getElementsByClassName('main_panel')[0].setAttribute('data-visible', true);
+	document.getElementById('history_slider_wrapper').setAttribute('data-visible', true);
+	document.getElementById('popular_tags_bar').setAttribute('data-visible', true);
+}

@@ -5,13 +5,18 @@ function hitMeUp(html) {
 	return element.content.firstChild;
 }
 
-let tag = hitMeUp('<div class="button-wrapper"><div class="button_pad close-button"><button>Close</button></div></div>');
+let tag = hitMeUp('<div class="button-wrapper"><div class="button_pad close-button"><button id="close_donation">Close</button></div></div>');
 
 window.addEventListener('load', function () {
   document.getElementsByClassName('explanation')[1].after(tag);
 	tag.children[0].children[0].addEventListener("click", function() { 
 		document.getElementById('contribution_wrapper').remove();
 	});
-	//tag.children[0].children[0].click(); //TODO: remove
-	console.log("Donation close button added.");
+	
+	chrome.storage.local.get(['donation'], function(data) {
+		if (data.donation) {
+			let close_btn = document.getElementById('close_donation');
+  			if (close_btn != null) close_btn.click();
+		}
+	});
 }, false);

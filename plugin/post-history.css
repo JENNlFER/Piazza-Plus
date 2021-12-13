@@ -10,3 +10,31 @@
 	z-index: 1;
 	position: relative;
 }
+
+.main_panel[data-visible="true"] {
+	top: auto !important;
+	height: -webkit-fill-available !important;
+	margin-top: 25px !important;
+}
+
+#history_slider_wrapper[data-visible="true"] {
+	visibility: visible;
+}
+
+#popular_tags_bar[data-visible="true"] {
+	z-index: auto;
+	position: static;
+}
+
+.main_panel[data-visible="false"] {
+	top: 0px !important;
+}
+
+#history_slider_wrapper[data-visible="false"] {
+	visibility: hidden;
+}
+
+#popular_tags_bar[data-visible="false"] {
+	z-index: 1;
+	position: relative;
+}
