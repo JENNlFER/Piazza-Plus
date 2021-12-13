@@ -2,49 +2,67 @@
 	font-size: initial;
 }
 
-#new_post_button {
-	box-shadow: inset 0.1px 0.1px 3px rgb(40, 40, 40);
-	padding-top: 3px !important;
-	padding-bottom: 4px !important;
-	border: solid;
-  border-width: 1px;
-  border-color: rgb(153, 153, 153);
+.actions {
+	display: flex;
+	align-items: center !important;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .submit_post, .save_draft, .cancel, #new_post_button {
-	font-weight: 600;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+  font-size: 10.5px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background: -webkit-linear-gradient(top, #5d9bcc 0%, #3575a8 100%);
+  border-radius: 4px;
+  background-clip: padding-box;
+  border: 1px solid #bbb;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  float: left;
+  font-weight: bold;
+  color: white;
+  margin: 0px;
+  padding: 1px 10px;
+  font-weight: 600;
 	position: relative;
-	border-width: 0px;
-	border-radius: 5px;
   padding-bottom: 2px;
   padding-top: 2px;
   padding-left: 10px;
   padding-right: 10px;
   color: white !important;
-  background-image: linear-gradient(to bottom, hsl(206, 52%, 58%), hsl(207, 52%, 43%));
   text-decoration: none !important;
   text-shadow: rgb(0 0 0 / 25%) 0px -1px 0px;
+
 }
 
 .submit_post:hover, .save_draft:hover, .cancel:hover, #new_post_button:hover {
-	box-shadow: inset 1px 1px 1px #000;
-	background-image: linear-gradient(to bottom, hsl(206, 52%, 58%), hsl(207, 52%, 43%));
-	border: none;
+  transition: background-position .1s linear;
+  background: -webkit-linear-gradient(top, #3575a8 0%, #5d9bcc 100%);
 }
 
+
 .submit_post:active, .save_draft:active, .cancel:active, #new_post_button:active {
-	box-shadow: inset 2px 2px 1px #000 !important;
-	background-image: linear-gradient(to bottom, hsl(206, 52%, 48%), hsl(207, 52%, 33%)) !important;
-	border: none;
+  outline: 0;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
 }
 
 .save_draft {
-	position: absolute;
-	right: 59px;
+	margin-left: auto !important;
+	order: 4;
 }
 
 .cancel {
-	float: right;
+	margin-right: 8px;
+	order: 5;
 }
 
 .anonymity_selector {
@@ -56,7 +74,7 @@
 
 .preview_link {
 	background: white;
-  height: 28px;
+  height: 27px;
   border-radius: 20px;
   box-shadow: inset 0.25px 0.25px 1px rgb(40 40 40);
   color: white;
@@ -73,10 +91,14 @@
 	transform: translateX(24px);
 }
 
+.orb:not(.on)::before {
+	background-image: linear-gradient(to bottom, hsl(206, 10%, 58%), hsl(207, 10%, 43%));
+}
+
 .orb::before {
 	content: ' ';
-	width: 24px;
-  height: 24px;
+	width: 23px;
+  height: 23px;
   border-radius: 20px;
   background-image: linear-gradient(to bottom, hsl(206, 52%, 58%), hsl(207, 52%, 43%));
   border: none;
@@ -84,9 +106,13 @@
   margin-top: 2px;
   right: 26px;
   pointer-events: none;
-  transform: translateX(2px);
+  transform: translateX(1px);
+	transition: transform 0.2s ease-in-out;
 }
 
+.orb-label {
+	font-size: 14px;
+}
 
 
 

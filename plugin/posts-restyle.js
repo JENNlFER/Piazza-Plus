@@ -8,7 +8,10 @@ const orb_callback = function(mutations, observer) {
 		
 		const links = a.getElementsByClassName('preview_link');
 		for (const link of links) {
-			// a.insertBefore(hitMeUp('<button class="orb"></button>'), link);
+			let preview_span = document.createElement('SPAN');
+			preview_span.innerHTML = 'Preview';
+			preview_span.classList.add('orb-label');
+			a.insertBefore(preview_span, link);
 			link.classList.add('orb');
 			// TODO: Fix me so I apply the correct on/off state
 			link.addEventListener('click', () => {
