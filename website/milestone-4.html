@@ -82,43 +82,59 @@
         <video width="960" height="569" controls>
           <source src="vid/close-donation.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>The donation ad on Piazza’s site lacks any clear way to close it, while taking up screen space. It is possible to close it, but only by going to a different post and back to the original post. This violates Heuristic #3 of Jakob Neilsen’s 10 Usability Heuristics for User Interface Design: User Control and Freedom. This heuristic emphasizes that “Like in a physical space, exits should be easy to find and well signposted so that they will be discovered when needed”, which Piazza explicitly does not do.</p>
+        <p>Our design improves this issue by incorporating a “Close” button, that utilizes the proximity principle to allow users to quickly discern the button's function in regards to the donation ad. Because the button is located and styled in a similar fashion to the “$4”, “$5”, and “$8” buttons so that users can quickly identify which element encapsulates it.</p>
+        <p><cite>Harley, Aurora. "Proximity Principle In Visual Design". Nielsen Norman Group, 2021, <a href = https://www.nngroup.com/articles/gestalt-proximity/>https://www.nngroup.com/articles/gestalt-proximity/</a>. Accessed 13 Dec 2021</cite></p>
+        <p><cite>Nielsen, Jakob. "User Control And Freedom (Usability Heuristic #3)". Nielsen Norman Group, 2021, <a href =https://www.nngroup.com/articles/user-control-and-freedom/>https://www.nngroup.com/articles/user-control-and-freedom/</a>. Accessed 13 Dec 2021.</cite></p>
         <hr>
         <h3>As a student I want to sort items in the sidebar so that I can easily find them.</h3>
         <video width="960" height="569" controls>
           <source src="vid/filter.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>Piazza’s has filters haphazardly placed in the bar, lowering the sites overall signal to noise ratio. This goes against Heursitic #8 of Jakob Nielsen’s 10 Usability Heuristics for User Interface Design: Aesthetic and minimalist design. This heuristic says that “If something would be used infrequently or by a small number of users… it might be a candidate for removal.” Not only are these filters unlikely to be used by new or time constrained users, they are still readily available along with other filters in the cog wheel to the right.</p>
+        <p>Thus, we chose to remove these extraneous filter options in favor of making the cog wheel’s function more discernible by giving it a label, which is supported by Nick Babich’s article Best Practices for Search, where they state that “if you do hide some, add a link to “View All Filters” so that they’re still accessible.” This way we can raise Piazza’s signal-to-noise ratio without sacrificing much in the way of usability.</p>
+        <p><cite>Babich, Nick. "Best Practices For Search | UX Booth". Uxbooth.Com, 2021, <a href = https://www.uxbooth.com/articles/best-practices-for-search/>https://www.uxbooth.com/articles/best-practices-for-search/</a>. Accessed 13 Dec 2021.</cite></p>
+        <p><cite>Moran, Kate. "Usability Heuristic 8: Aesthetic And Minimalist Design (Video)". Nielsen Norman Group, 2021, <a href = https://www.nngroup.com/videos/aesthetic-and-minimalist-design/>https://www.nngroup.com/videos/aesthetic-and-minimalist-design/</a>. Accessed 13 Dec 2021.</cite></p>
         <hr>
         <h3>As a student I want to be able to navigate to and read other posts and comments so that I can participate in class activities and discussions.</h3>
         <video width="960" height="569" controls>
           <source src="vid/find-post.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>Piazza’s original design has a difficult to read font and fills the screen with unnecessary information by default. The biggest example of this is the stats display, which shows extraneous information that is not applicable to most new users. Given that most posts do not require an average response time, special mentions, and current user counts to complete, the information is irrelevant to the regular use of Piazza.</p>
+        <p>We changed the program to automatically hide these stats when the page is loaded, so that more screen space is dedicated to the posts and their content, rather than information that is likely not relevant.</p>
         <hr>
         <h3>As a student, I want to be able to show and hide the sidebar so I have more room to read posts.</h3>
         <video width="960" height="569" controls>
           <source src="vid/show-hide.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>The former Piazza collapse/hide feed had few signifiers of interactability. The article Make Clickable Elements Recognizable states that “Design buttons that are easy to find. Make them: Large, Bright, A contrasting color from the surrounding text and background, and Obviously clickable.” Piazza’s original collapse button had few if any of these relevant features, being difficult to spot with it’s grey colors and not being obvious in it’s function.</p>
+        <p>As a result, we designed our button to have all of these elements so that it was easily distinguished by the user in all situations when using Piazza. It uses piazza’s bright blue color palette against the grey background, as well as hover and click animations to show it is easily clickable.</p>
+        <p><cite>"Make Clickable Elements Recognizable. - Health Literacy Online | Health.Gov". Health.Gov, 2021, <a href = https://health.gov/healthliteracyonline/organize/section-4-5/>https://health.gov/healthliteracyonline/organize/section-4-5/</a>. Accessed 13 Dec 2021.</cite></p>
         <hr>
         <h3>As a student I want to quickly and easily make posts and comments so I don't fall behind in-class discussion.</h3>
         <video width="960" height="569" controls>
           <source src="vid/posting-story.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>Piazza’s original design all the functionalities on the bottom of the comment window were small links that were not immediately discernible as interactable elements and may be easily missed by a new user. Additionally, as discussed in Milestone 2, these elements contradict Heuristic #4 of Jakob Nielsen’s article 10 Usability Heuristics for User Interface Design, “To be easy to learn and use, systems should adhere to both internal and external consistency — they should use the same patterns everywhere inside the system and should also follow web-, platform-, and domain-specific conventions.” It’s clear by the existence of elements like the “New Post” and “Edit” buttons that a clear internal consistency is not being met.</p>
+        <p>Our changes remedy this by conforming to traditional button standards, while taking steps to make the elements easy to see and clearly interactable. This is supported by the article Beyond Blue Links: Making Clickable Elements Recognizable, which states that “Buttons that are obviously clickable have borders and shadows.” </p>
+        <p><cite>Nielsen, Jakob. "10 Usability Heuristics For User Interface Design". Nielsen Norman Group, 2021, <a href = https://www.nngroup.com/articles/ten-usability-heuristics/>https://www.nngroup.com/articles/ten-usability-heuristics/</a>. Accessed 13 Dec 2021.</cite></p>
+        <p><cite>"Make Clickable Elements Recognizable. - Health Literacy Online | Health.Gov". Health.Gov, 2021, <a href = https://health.gov/healthliteracyonline/organize/section-4-5/>https://health.gov/healthliteracyonline/organize/section-4-5/</a>. Accessed 13 Dec 2021.</cite></p>
         <hr>
         <h3>As a student I want to know when an instructor has seen my posts so that I can have confirmation that my participation has been counted.</h3>
         <video width="960" height="569" controls>
           <source src="vid/resolve-unresolve.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>The original Piazza post resolution display was excessively urgent in its use of a bright and alarming shade of red. The use of red is one that can be distracting among the other elements, according to Nadeeka Athukorala’s article How To Not Get In Trouble When Branding Your App With Red, “when the other elements are too in red, it just creates a competition among all the elements, making the user unable to focus on the most important message.” Additionally, it allowed any student to change another student’s post, which gave student’s control over other student’s content in a way that could lead to confusion.</p>
+        <p>To resolve this, we limited resolution controls to the user that created the post, as well as changed the unresolved box to a lighter shade of a red and the resolved box to Piazza’s shade of blue. This way the unresolved box won’t be as attention grabbing as the previous;y used shade, as it is lighter. This is supported again by Nadeeka Athurakorala’s article, where they state that “You may need all the qualities of red to your branding but still you don’t want to use the pure red on your app. In such a scenario, you can use related colors.”</p>
+        <p><cite>Athukorala, Nadeeka. "How To Not Get In Trouble When Branding Your App With Red". Medium, 2019, <a href = https://uxdesign.cc/branding-your-app-with-red-a7df0b6b0e54>https://uxdesign.cc/branding-your-app-with-red-a7df0b6b0e54</a>. Accessed 13 Dec 2021.</cite></p>
         <hr>
         <h3>As a student I want to toggle the Note History on and off so that I have more screen space to use if I don't use that feature.</h3>
         <video width="960" height="569" controls>
           <source src="vid/note-history.mp4" type="video/mp4">
         </video>
-        <p>Skeee do ba baada bop</p>
+        <p>The Note History function is one that we identified as an extraneous tool, which sees little regular use. Not only do posts already have a time stamp next to them, they are ordered chronologically, so it should be relatively easy to discern when a post was made relative to other posts. However, by not being able to hide the Note History, we are left with less screen space and a distractible element that will see little use. This violates  Heursitic #8 of Jakob Nielsen’s 10 Usability Heuristics for User Interface Design: Aesthetic and minimalist design. This heuristic says that “If something would be used infrequently or by a small number of users… it might be a candidate for removal.”</p>
+        <p>Therefore, our design allows users the option to enable or disable the Note History from the view, giving them more control over the user interface. This satisfies both Heuristic #3: User Control and Freedom and Heuristic #8: Aesthetic and minimalist design.</p>
+        <p><cite>Moran, Kate. "Usability Heuristic 8: Aesthetic And Minimalist Design (Video)". Nielsen Norman Group, 2021, <a href = https://www.nngroup.com/videos/aesthetic-and-minimalist-design/>https://www.nngroup.com/videos/aesthetic-and-minimalist-design/</a>. Accessed 13 Dec 2021.</cite></p>
       </div>
     </section>
     <hr>
