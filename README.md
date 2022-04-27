@@ -1,2 +1,2 @@
 # Piazza Plus
- oh boy it's better
+ Web extension to improve piazza.
